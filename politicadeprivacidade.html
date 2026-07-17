@@ -7,7 +7,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Termos de Uso - TFIVE</title>
+<title>TFIVE - Termos de Uso</title>
 
 <style>
 
@@ -17,13 +17,18 @@
     box-sizing:border-box;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
 
-    font-family:Arial,Helvetica,sans-serif;
+    font-family:'Segoe UI',Arial,sans-serif;
 
-    background:#080808;
+    background:
+    radial-gradient(circle at top,#1a1a1a,#050505 60%);
 
-    color:white;
+    color:#ffffff;
 
     line-height:1.8;
 
@@ -31,71 +36,107 @@ body{
 
 header{
 
-    background:linear-gradient(90deg,#ff2d55,#ff006e,#8b5cf6,#0099ff);
-
-    padding:60px 20px;
+    padding:70px 20px;
 
     text-align:center;
+
+    background:
+    linear-gradient(
+    90deg,
+    #ff3131,
+    #ff006e,
+    #8b5cf6,
+    #00a2ff);
+
+    box-shadow:0 10px 40px rgba(0,0,0,.45);
 
 }
 
 header h1{
 
-    font-size:52px;
+    font-size:64px;
 
-    font-weight:bold;
+    letter-spacing:5px;
 
-    letter-spacing:3px;
+    font-weight:900;
+
+    text-shadow:
+    0 0 20px rgba(255,255,255,.15);
+
+}
+
+header h3{
+
+    margin-top:10px;
+
+    font-size:28px;
+
+    font-weight:400;
 
 }
 
 header p{
 
-    margin-top:15px;
+    margin-top:20px;
 
-    font-size:20px;
-
-    opacity:.95;
+    font-size:18px;
 
 }
 
 .container{
 
-    width:90%;
+    width:92%;
 
     max-width:1200px;
 
     margin:auto;
 
-    margin-top:50px;
-
-    margin-bottom:60px;
+    padding:60px 0;
 
 }
 
 .card{
 
-    background:#121212;
-
-    border-radius:18px;
-
-    padding:35px;
+    position:relative;
 
     margin-bottom:35px;
 
-    border:1px solid rgba(255,255,255,.08);
+    border-radius:20px;
 
-    box-shadow:0 0 30px rgba(0,153,255,.12);
+    padding:35px;
 
-    transition:.3s;
+    background:#111;
+
+    border:2px solid transparent;
+
+    background-image:
+    linear-gradient(#111,#111),
+    linear-gradient(
+    90deg,
+    #ff3131,
+    #ff006e,
+    #8b5cf6,
+    #00a2ff);
+
+    background-origin:border-box;
+
+    background-clip:padding-box,border-box;
+
+    box-shadow:
+    0 0 20px rgba(255,0,110,.18),
+    0 0 35px rgba(0,162,255,.15);
+
+    transition:.35s;
 
 }
 
 .card:hover{
 
-    transform:translateY(-4px);
+    transform:translateY(-8px);
 
-    box-shadow:0 0 40px rgba(255,0,110,.25);
+    box-shadow:
+    0 0 30px rgba(255,0,110,.40),
+    0 0 50px rgba(0,162,255,.30);
 
 }
 
@@ -105,7 +146,13 @@ header p{
 
     font-size:30px;
 
-    background:linear-gradient(90deg,#ff2d55,#ff006e,#8b5cf6,#0099ff);
+    background:
+    linear-gradient(
+    90deg,
+    #ff3131,
+    #ff006e,
+    #8b5cf6,
+    #00a2ff);
 
     -webkit-background-clip:text;
 
@@ -115,11 +162,11 @@ header p{
 
 .card p{
 
+    color:#d9d9d9;
+
     font-size:18px;
 
-    color:#d8d8d8;
-
-    margin-bottom:15px;
+    margin-bottom:16px;
 
 }
 
@@ -127,7 +174,7 @@ header p{
 
     margin-left:25px;
 
-    color:#d8d8d8;
+    color:#d9d9d9;
 
 }
 
@@ -137,29 +184,53 @@ header p{
 
 }
 
-footer{
-
-    text-align:center;
-
-    padding:40px;
-
-    color:#888;
-
-    border-top:1px solid #222;
-
-}
-
 a{
 
-    color:#00bfff;
+    color:#00b8ff;
 
     text-decoration:none;
+
+    font-weight:bold;
 
 }
 
 a:hover{
 
-    text-decoration:underline;
+    color:#ffffff;
+
+}
+
+footer{
+
+    margin-top:80px;
+
+    padding:45px;
+
+    text-align:center;
+
+    background:#0d0d0d;
+
+    border-top:1px solid #222;
+
+    color:#888;
+
+}
+
+.logo{
+
+    font-size:70px;
+
+    font-weight:900;
+
+    letter-spacing:6px;
+
+}
+
+.sub{
+
+    margin-top:10px;
+
+    font-size:22px;
 
 }
 
@@ -171,28 +242,34 @@ a:hover{
 
 <header>
 
-<h1>TFIVE</h1>
+<div class="logo">TFIVE</div>
 
-<p>Termos de Uso</p>
+<div class="sub">
 
-<p>Última atualização: 17/07/2026</p>
+Termos de Uso
+
+</div>
+
+<p>
+
+Última atualização: 17/07/2026
+
+</p>
 
 </header>
 
 <div class="container">
 
-<div class="card">
+    <div class="card">
 
 <h2>1. Aceitação dos Termos</h2>
 
 <p>
-Ao acessar ou utilizar o aplicativo TFIVE, o usuário declara que leu,
-compreendeu e concorda com estes Termos de Uso.
+Ao acessar ou utilizar o aplicativo <strong>TFIVE</strong>, o usuário declara que leu, compreendeu e concorda com estes Termos de Uso.
 </p>
 
 <p>
-Caso não concorde com qualquer disposição destes Termos,
-o usuário não deverá utilizar o aplicativo.
+Caso não concorde com qualquer disposição destes Termos, o usuário não deverá utilizar o aplicativo.
 </p>
 
 </div>
@@ -202,18 +279,15 @@ o usuário não deverá utilizar o aplicativo.
 <h2>2. Sobre o TFIVE</h2>
 
 <p>
-
-O TFIVE é um aplicativo independente que reúne rankings com os
-<strong>Top 5 produtos gamer</strong> de diversas categorias.
-
+O TFIVE é um aplicativo independente que reúne rankings com os <strong>Top 5 produtos gamer</strong> de diversas categorias.
 </p>
 
 <p>
+Nosso objetivo é facilitar a escolha dos melhores equipamentos gamer por meio de listas cuidadosamente selecionadas, descrições simplificadas e vídeos relacionados aos produtos.
+</p>
 
-O objetivo do aplicativo é facilitar a pesquisa dos melhores equipamentos gamer
-por meio de listas selecionadas, descrições simplificadas e vídeos relacionados
-aos produtos.
-
+<p>
+O aplicativo foi desenvolvido para economizar o tempo do usuário, reunindo apenas os produtos mais recomendados de cada categoria em um único lugar.
 </p>
 
 </div>
@@ -223,22 +297,15 @@ aos produtos.
 <h2>3. Funcionamento</h2>
 
 <p>
-
-O TFIVE não comercializa produtos.
-
+O TFIVE não comercializa produtos nem processa pagamentos.
 </p>
 
 <p>
-
-O aplicativo apenas apresenta recomendações e links para páginas de terceiros.
-
+O aplicativo apenas apresenta informações, avaliações, descrições e recomendações de produtos, além de disponibilizar links para lojas de terceiros.
 </p>
 
 <p>
-
-Quando o usuário optar por adquirir um produto,
-será redirecionado para o Mercado Livre para concluir sua compra.
-
+Ao selecionar um produto, o usuário será redirecionado para o Mercado Livre para concluir sua compra em ambiente seguro.
 </p>
 
 </div>
@@ -248,16 +315,15 @@ será redirecionado para o Mercado Livre para concluir sua compra.
 <h2>4. Programa de Afiliados</h2>
 
 <p>
-
-Alguns links disponibilizados pelo aplicativo são links de afiliados.
-
+Alguns links disponibilizados pelo aplicativo fazem parte de programas de afiliados.
 </p>
 
 <p>
+Isso significa que o TFIVE poderá receber uma comissão quando uma compra for realizada através desses links, sem qualquer custo adicional ao usuário.
+</p>
 
-Isso significa que o TFIVE poderá receber comissão quando uma compra
-for realizada, sem qualquer custo adicional ao usuário.
-
+<p>
+Essa remuneração ajuda na manutenção e evolução do aplicativo.
 </p>
 
 </div>
@@ -267,29 +333,20 @@ for realizada, sem qualquer custo adicional ao usuário.
 <h2>5. Informações dos Produtos</h2>
 
 <p>
-
-As informações apresentadas no aplicativo possuem finalidade exclusivamente informativa.
-
+As informações apresentadas possuem finalidade exclusivamente informativa.
 </p>
 
 <p>
-
-Preços, disponibilidade, especificações, imagens,
-descrições e demais informações podem ser alteradas
-a qualquer momento pelos vendedores ou pelo Mercado Livre.
-
+Preços, disponibilidade, imagens, especificações, vídeos, avaliações e descrições podem ser alterados a qualquer momento pelo Mercado Livre ou pelos vendedores responsáveis.
 </p>
 
 <p>
-
-Antes de concluir qualquer compra,
-o usuário deve verificar todas as informações diretamente na página do produto.
-
+Antes de concluir qualquer compra, recomendamos que o usuário confira todas as informações diretamente na página oficial do produto.
 </p>
 
 </div>
 
-<div class="card">
+    <div class="card">
 
 <h2>6. Responsabilidade pelas Compras</h2>
 
@@ -309,9 +366,10 @@ da garantia ou do atendimento pós-venda.
 
 <p>
 
-Qualquer dúvida, reclamação ou solicitação relacionada à compra
-deverá ser tratada diretamente com o Mercado Livre
-ou com o vendedor responsável.
+Qualquer dúvida, solicitação de reembolso,
+troca, devolução, garantia ou reclamação referente
+ao produto deverá ser tratada diretamente com
+o Mercado Livre ou com o vendedor responsável.
 
 </p>
 
@@ -323,10 +381,26 @@ ou com o vendedor responsável.
 
 <p>
 
-Embora o TFIVE busque manter suas listas atualizadas,
-não garantimos que todos os produtos permanecerão disponíveis,
-que os preços continuarão os mesmos
-ou que os links permanecerão ativos.
+Embora o TFIVE procure manter suas listas sempre
+atualizadas, não garantimos que todos os produtos
+continuarão disponíveis ou que seus preços
+permanecerão inalterados.
+
+</p>
+
+<p>
+
+Os anúncios podem ser alterados,
+removidos ou substituídos pelos vendedores
+a qualquer momento.
+
+</p>
+
+<p>
+
+Caso isso aconteça, o usuário deverá verificar
+as informações diretamente na página do produto
+antes de finalizar qualquer compra.
 
 </p>
 
@@ -342,10 +416,12 @@ O aplicativo TFIVE,
 sua identidade visual,
 layout,
 textos,
+ícones,
 marca,
 logotipo
 e demais conteúdos exclusivos
-são protegidos pelas leis de propriedade intelectual.
+são protegidos pela legislação aplicável
+sobre propriedade intelectual.
 
 </p>
 
@@ -353,7 +429,10 @@ são protegidos pelas leis de propriedade intelectual.
 
 É proibida a reprodução,
 modificação,
-distribuição ou utilização sem autorização do titular.
+distribuição,
+comercialização ou utilização,
+total ou parcial,
+sem autorização prévia do titular.
 
 </p>
 
@@ -368,18 +447,23 @@ distribuição ou utilização sem autorização do titular.
 As marcas,
 nomes comerciais,
 imagens,
+fotografias,
+vídeos,
 logotipos
-e produtos apresentados pertencem aos seus respectivos proprietários.
+e produtos apresentados pertencem
+aos seus respectivos proprietários.
 
 </p>
 
 <p>
 
-Sua utilização ocorre exclusivamente para identificação dos produtos
+Sua utilização ocorre apenas para
+identificação dos produtos apresentados
 e não representa qualquer vínculo,
 patrocínio,
-autorização
-ou parceria oficial com seus proprietários.
+autorização,
+licenciamento
+ou parceria oficial.
 
 </p>
 
@@ -399,40 +483,54 @@ O TFIVE não garante:
 
 <li>Disponibilidade contínua do aplicativo;</li>
 
+<li>Funcionamento ininterrupto;</li>
+
 <li>Atualização permanente das ofertas;</li>
 
-<li>Permanência dos anúncios publicados por terceiros;</li>
+<li>Precisão absoluta dos preços;</li>
 
-<li>Precisão absoluta dos preços apresentados;</li>
+<li>Disponibilidade dos produtos;</li>
 
-<li>Disponibilidade dos produtos.</li>
+<li>Manutenção dos anúncios publicados por terceiros.</li>
 
 </ul>
 
 <p>
 
-A decisão final de compra é exclusivamente do usuário,
-que deverá verificar todas as informações diretamente na página do produto.
+Toda decisão de compra é de responsabilidade
+exclusiva do usuário,
+que deverá conferir as informações
+diretamente na página do produto
+antes de finalizar seu pedido.
 
 </p>
 
 </div>
 
-<div class="card">
+    <div class="card">
 
 <h2>11. Alterações destes Termos</h2>
 
 <p>
 
-Os presentes Termos de Uso poderão ser alterados
-a qualquer momento,
-sem aviso prévio.
+O TFIVE poderá alterar estes Termos de Uso
+a qualquer momento para refletir melhorias,
+novas funcionalidades ou alterações legais.
 
 </p>
 
 <p>
 
-A versão mais recente estará sempre disponível nesta página.
+Sempre que houver alterações relevantes,
+a versão atualizada ficará disponível nesta página,
+acompanhada da data da última atualização.
+
+</p>
+
+<p>
+
+Recomendamos que o usuário consulte estes Termos
+periodicamente.
 
 </p>
 
@@ -444,16 +542,17 @@ A versão mais recente estará sempre disponível nesta página.
 
 <p>
 
-Caso tenha dúvidas sobre estes Termos de Uso,
-entre em contato através do e-mail:
+Caso tenha dúvidas,
+sugestões ou queira entrar em contato conosco,
+utilize o e-mail abaixo:
 
 </p>
 
-<p>
+<p style="margin-top:20px;font-size:22px;">
 
 <a href="mailto:tfive.app@gmail.com">
 
-tfive.app@gmail.com
+📧 tfive.app@gmail.com
 
 </a>
 
@@ -465,7 +564,27 @@ tfive.app@gmail.com
 
 <footer>
 
+<div style="font-size:34px;font-weight:bold;
+background:linear-gradient(90deg,#ff3131,#ff006e,#8b5cf6,#00a2ff);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+margin-bottom:15px;">
+
+TFIVE
+
+</div>
+
+<p>
+
+Os Top 5 Produtos Gamer do Momento
+
+</p>
+
+<p style="margin-top:10px;">
+
 © 2026 TFIVE — Todos os direitos reservados.
+
+</p>
 
 </footer>
 
