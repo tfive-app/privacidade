@@ -6,133 +6,180 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TFIVE - Política de Privacidade</title>
     <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        html{
-            scroll-behavior:smooth;
+        html {
+            scroll-behavior: smooth;
         }
 
-        body{
-            font-family:'Segoe UI',Arial,sans-serif;
-            background: radial-gradient(circle at top,#1a1a1a,#050505 60%);
-            color:#ffffff;
-            line-height:1.8;
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: #000000;
+            color: #ffffff;
+            line-height: 1.6;
         }
 
-        header{
-            padding:70px 20px;
-            text-align:center;
-            background: linear-gradient(90deg, #ff3131, #ff006e, #8b5cf6, #00a2ff);
-            box-shadow:0 10px 40px rgba(0,0,0,.45);
+        header {
+            padding: 60px 20px;
+            text-align: center;
+            background: #000000;
+            border-bottom: 1px solid #111111;
+            position: relative;
         }
 
-        header h1{
-            font-size:64px;
-            letter-spacing:5px;
-            font-weight:900;
-            text-shadow: 0 0 20px rgba(255,255,255,.15);
+        /* Linha superior com o gradiente característico da identidade */
+        header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            height: 1px;
+            background: linear-gradient(90deg, #ff1e27, #ff007f, #8b5cf6, #0066ff);
+            box-shadow: 0 0 20px #ff007f, 0 0 40px #0066ff;
         }
 
-        header h3{
-            margin-top:10px;
-            font-size:28px;
-            font-weight:400;
+        .logo-text {
+            font-size: 52px;
+            font-weight: 900;
+            font-style: italic;
+            letter-spacing: 2px;
+            background: linear-gradient(90deg, #ff1e27, #ff007f, #8b5cf6, #0066ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
         }
 
-        header p{
-            margin-top:20px;
-            font-size:18px;
+        .sub {
+            margin-top: 12px;
+            font-size: 20px;
+            color: #ffffff;
+            font-weight: 600;
+            letter-spacing: 1px;
         }
 
-        .container{
-            width:92%;
-            max-width:1200px;
-            margin:auto;
-            padding:60px 0;
+        header p {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #666666;
         }
 
-        .card{
-            position:relative;
-            margin-bottom:35px;
-            border-radius:20px;
-            padding:35px;
-            background:#111;
-            border:2px solid transparent;
-            background-image: linear-gradient(#111,#111), linear-gradient(90deg, #ff3131, #ff006e, #8b5cf6, #00a2ff);
-            background-origin:border-box;
-            background-clip:padding-box,border-box;
-            box-shadow: 0 0 20px rgba(255,0,110,.18), 0 0 35px rgba(0,162,255,.15);
-            transition:.35s;
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: auto;
+            padding: 40px 0;
         }
 
-        .card:hover{
-            transform:translateY(-8px);
-            box-shadow: 0 0 30px rgba(255,0,110,.40), 0 0 50px rgba(0,162,255,.30);
+        /* Cards com bordas gradientes simulando as caixas de destaque do app */
+        .card {
+            position: relative;
+            margin-bottom: 25px;
+            border-radius: 16px;
+            padding: 30px;
+            background: #080808;
+            border: 1.5px solid transparent;
+            background-image: linear-gradient(#080808, #080808), linear-gradient(135deg, #ff007f, #7928ca, #0066ff);
+            background-origin: border-box;
+            background-clip: padding-box, border-box;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.8);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .card h2{
-            margin-bottom:20px;
-            font-size:30px;
-            background: linear-gradient(90deg, #ff3131, #ff006e, #8b5cf6, #00a2ff);
-            -webkit-background-clip:text;
-            -webkit-text-fill-color:transparent;
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0 20px rgba(0, 102, 255, 0.15);
         }
 
-        .card h3{
-            margin: 20px 0 10px 0;
-            font-size:22px;
-            color: #ff006e;
+        .card h2 {
+            margin-bottom: 18px;
+            font-size: 24px;
+            font-weight: 700;
+            color: #ffffff;
+            border-left: 4px solid #ff0055;
+            padding-left: 12px;
         }
 
-        .card p{
-            color:#d9d9d9;
-            font-size:18px;
-            margin-bottom:16px;
+        .card h3 {
+            margin: 22px 0 10px 0;
+            font-size: 18px;
+            color: #0066ff;
+            font-weight: 600;
         }
 
-        .card ul{
-            margin-left:25px;
-            margin-bottom:20px;
-            color:#d9d9d9;
+        .card p {
+            color: #aaaaaa;
+            font-size: 16px;
+            margin-bottom: 14px;
         }
 
-        .card li{
-            margin-bottom:12px;
-            font-size:18px;
+        .card ul {
+            margin-left: 20px;
+            margin-bottom: 18px;
+            color: #aaaaaa;
         }
 
-        a{
-            color:#00b8ff;
-            text-decoration:none;
-            font-weight:bold;
+        .card li {
+            margin-bottom: 10px;
+            font-size: 16px;
         }
 
-        a:hover{
-            color:#ffffff;
+        /* Estilo dos links no azul padrão */
+        a {
+            color: #0066ff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.2s;
         }
 
-        footer{
-            margin-top:80px;
-            padding:45px;
-            text-align:center;
-            background:#0d0d0d;
-            border-top:1px solid #222;
-            color:#888;
+        a:hover {
+            color: #ff007f;
         }
 
-        .logo{
-            font-size:70px;
-            font-weight:900;
-            letter-spacing:6px;
+        /* Botão simulando o botão "Ir à loja" do aplicativo */
+        .btn-contato {
+            display: inline-block;
+            margin-top: 15px;
+            background-color: #0066ff;
+            color: #ffffff;
+            padding: 12px 30px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 16px;
+            transition: background-color 0.2s;
         }
 
-        .sub{
-            margin-top:10px;
-            font-size:22px;
+        .btn-contato:hover {
+            background-color: #0052cc;
+            color: #ffffff;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding: 40px;
+            text-align: center;
+            background: #050505;
+            border-top: 1px solid #111111;
+            color: #444444;
+        }
+
+        .footer-logo {
+            font-size: 28px;
+            font-weight: 900;
+            font-style: italic;
+            background: linear-gradient(90deg, #ff007f, #0066ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+
+        footer p {
+            font-size: 14px;
         }
     </style>
 </head>
@@ -140,7 +187,7 @@
 <body>
 
 <header>
-    <div class="logo">TFIVE</div>
+    <div class="logo-text">TFIVE</div>
     <div class="sub">Política de Privacidade</div>
     <p>Última atualização: 18 de julho de 2026</p>
 </header>
@@ -229,7 +276,7 @@
             <li>novidades relacionadas ao conteúdo do TFIVE;</li>
             <li>informações relevantes relacionadas ao TFIVE.</li>
         </ul>
-        <p>Para profissionalizar o envio dessas notificações, o Firebase gera automaticamente um identificador técnico (token) exclusivo para cada instalação do aplicativo.</p>
+        <p>Para possibilitar o envio dessas notificações, o Firebase gera automaticamente um identificador técnico (token) exclusivo para cada instalação do aplicativo.</p>
         <p>Esse identificador não contém informações que identifiquem diretamente o usuário.</p>
         <p>O usuário poderá desativar o recebimento de notificações a qualquer momento nas configurações do próprio dispositivo Android.</p>
     </div>
@@ -268,7 +315,7 @@
     </div>
 
     <div class="card">
-        <h2>8. Preço e Disponibilidade</h2>
+        <h2>8. Preços e Disponibilidade</h2>
         <p>Os preços apresentados pelo TFIVE possuem finalidade exclusivamente informativa.</p>
         <p>Como os produtos são comercializados por terceiros, seus valores podem sofrer alterações a qualquer momento, sem aviso prévio.</p>
         <p>Da mesma forma, promoções, descontos, condições de pagamento, frete e disponibilidade em estoque podem variar conforme a política adotada pelo Mercado Livre e pelos vendedores responsáveis.</p>
@@ -431,9 +478,9 @@
     <div class="card">
         <h2>20. Contato</h2>
         <p>Caso tenha dúvidas, sugestões, solicitações ou queira exercer qualquer direito relacionado à privacidade ou à utilização do aplicativo, entre em contato conosco pelo canal oficial abaixo:</p>
-        <p style="margin-top:20px;font-size:22px;">
-            <a href="mailto:tfive.app@gmail.com">📧 tfive.app@gmail.com</a>
-        </p>
+        <p><strong>TFIVE</strong></p>
+        <p style="margin-bottom: 15px;">Responderemos às solicitações dentro de um prazo razoável, observadas as disposições legais aplicáveis.</p>
+        <a href="mailto:tfive.app@gmail.com" class="btn-contato">📧 tfive.app@gmail.com</a>
     </div>
 
     <div class="card">
@@ -446,11 +493,9 @@
 </div>
 
 <footer>
-    <div style="font-size:34px;font-weight:bold; background:linear-gradient(90deg,#ff3131,#ff006e,#8b5cf6,#00a2ff); -webkit-background-clip:text; -webkit-text-fill-color:transparent; margin-bottom:15px;">
-        TFIVE
-    </div>
+    <div class="footer-logo">TFIVE</div>
     <p>Os Top 5 Produtos Gamer do Momento</p>
-    <p style="margin-top:10px;">© 2026 TFIVE — Todos os direitos reservados.</p>
+    <p style="margin-top:10px; color: #333333;">© 2026 TFIVE — Todos os direitos reservados.</p>
 </footer>
 
 </body>
